@@ -46,12 +46,12 @@
 
   // Event Listeners
   filterLis.forEach((li) => {
-    li.addEventListener('click', removeActive);
+    li.addEventListener('click', changeActive);
     li.addEventListener('click', manageImages);
   });
 
   // Functions
-  function removeActive() {
+  function changeActive() {
     filterLis.forEach((li) => {
       li.classList.remove('active');
       this.classList.add('active');
